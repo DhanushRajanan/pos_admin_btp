@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run pos_admin_btp-3",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "customer.pos_admin_btp.Application",
+      "projectName": "pos_admin_btp",
+      "preLaunchTask": "Build pos_admin_btp",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env3",
+      "args": [
+        "--spring.profiles.active=default"
+      ],
+      "env": {
+        "run.config": "{\"handlerId\":\"cap_run_config_handler_id\",\"runnableId\":\"{\\\"projectPath\\\":\\\"/home/user/projects/pos_admin_btp\\\",\\\"profileName\\\":\\\"default\\\"}\"}"
+      }
+    }
+  ]
+}
